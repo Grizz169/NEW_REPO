@@ -3,57 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My New Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            color: #5B2C6F;
+            background-color: #D7BDE2;
+            width: 80%;
+            margin: 0px auto;
+            text-align: center;
+        }
+        .header {
+            border: 0px solid #000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .nav a {
+            border: 1px solid #000;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+        .text-section {
+            border: 1px solid #000;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .image-section {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .image-section img {
+            width: 250px;
+            height: 250px;
+            border: 1px solid #000;
+        }
+        .footer {
+            border: 1px solid #000;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <h1>Jane Doe</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <div class="container">
+        <!-- Header with Company Name -->
+        <div class="header">
+            <h1>Company Name</h1>
         </div>
-    </header>
 
-    <!-- About Section -->
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>Hi! I’m a web developer passionate about building clean, user-friendly websites. I love coding, coffee, and solving problems.</p>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Project 1</h3>
-                    <p>A cool e-commerce site built with HTML, CSS, and JavaScript.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Project 2</h3>
-                    <p>A weather app using APIs and responsive design.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Project 3</h3>
-                    <p>A portfolio template (like this one!) for beginners.</p>
-                </div>
-            </div>
+        <!-- Navigation Links -->
+        <div class="nav">
+            <a href="index.html">Link to Home page</a>
+            <a href="classes.html">Link to Classes page</a>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="container">
-            <p>Contact me at: jane.doe@email.com</p>
-            <p>&copy; 2025 Jane Doe. All rights reserved.</p>
+        <!-- Text Section -->
+        <div class="text-section">
+            <p>Welcome to our website! This is the home page where you can learn more about what we offer.</p>
         </div>
-    </footer>
+
+        <!-- Image Section -->
+        <div class="image-section">
+            <img src="IMAGE 2.png" alt="Image 1">
+            <img src="IMAGE 3.jpg" alt="Image 2">
+            <img src="IMAGE 3.png" alt="Image 3">
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>For more information email us at (email address)</p>
+        </div>
+    </div>
 </body>
 </html>
